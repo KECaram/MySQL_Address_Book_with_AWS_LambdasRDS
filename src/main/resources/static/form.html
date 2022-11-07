@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <body>
+    <h1>New Address Book Entry</h1>
+        <p>***Note CANNOT leave fields empty must put a space to indicate empty field***</p>
+        <p>You will get a Gateway Timeout if you leave empty fields</p>
+        <form action="https://gdfvighdi8.execute-api.us-east-1.amazonaws.com/v2/" method="POST">
+            <label>First Name:</label>
+            <input type="text" name="first_name" /><br>
+            <label>Last Name:</label>
+            <input type="text" name="last_name" /><br>
+            <label>Address (line 1):</label>
+            <input type="text" name="street_address" /><br>
+            <label>Address (line 2):</label>
+            <input type="text" name="additional_address" /><br>
+            <label>City:</label>
+            <input type="text" name="city_or_town" /><br>
+            <label>State:</label>
+            <input type="text" name="state" /><br>
+            <label>Zip Code:</label>
+            <input type="text" name="zipcode" /><br>
+            <label>Home Phone:</label>
+            <input type="text" name="telephone" /><br>
+            <label>Email:</label>
+            <input type="text" name="email" /><br>
+            <input type="submit" /><br>
+        </form>
+    </body>
+</html>
