@@ -91,7 +91,7 @@ public class FileUploaderController {
      * Method called after a POST request to the endpoint localhost:8080/.
      * Method pulls the filled out form values as a JSON String from the response body.
      * The method then maps that string to the AddressBookEntry class and persists it through to the database.
-     * @param formData a representation of the AddressBookEntry class as a JSON formatted String
+     * @param formData a representation of the AddressBookEntry class as a Map Object
      * @return AddressBookEntry containing the passed data and an OK response request
      * @throws ProcessingException if there is an error processing the passed JSON String
      */
