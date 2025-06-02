@@ -61,6 +61,7 @@ public class FileUploaderController {
      * @return list of entries from processed and an OK response request
      * @throws ProcessingException if there is an error processing the file
      */
+    @SuppressWarnings("null")
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value = "/uploader")
     public ResponseEntity<List<AddressBookEntry>> createFromFile(@RequestParam(value = "file", required = false) MultipartFile file)

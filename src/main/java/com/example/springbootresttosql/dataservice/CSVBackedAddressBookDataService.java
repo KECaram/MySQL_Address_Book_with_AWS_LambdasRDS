@@ -26,6 +26,7 @@ public class CSVBackedAddressBookDataService implements DataService{
      * @throws CsvValidationException when there is a serious csv configuration error
      */
 
+    @SuppressWarnings("rawtypes")
     @Override
     public List<AddressBookEntry> addToDatabase(MultipartFile file, AddressRepository repository) throws IOException, CsvValidationException {
 
